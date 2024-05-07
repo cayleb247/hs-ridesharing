@@ -1,0 +1,28 @@
+{% for ride in rides%}
+  <div class = "border-bottom row" style = "margin-bottom:16px;padding-bottom:10px">
+  <div class = 'col-9'>
+    <h4 style = "color:rgb(120, 120, 120)">
+      {{ride['name']}}
+    </h4>
+    {% if 'location' in ride%}
+      <div>
+        <b>Location:</b>
+        {{ride['location']}}
+      </div>
+    {% endif %}
+    {% if 'ETA' in ride %}
+      <div>
+        <b>ETA:</b>
+        {{ride['ETA']}}
+      </div>
+    {% endif %}
+  </div>
+
+  <div class = 'col-3'>
+    <button type = "button" class = "btn btn-primary">
+      Call Ride
+    </button>
+  </div>
+  
+  </div>
+{% endfor %}
