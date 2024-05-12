@@ -5,25 +5,25 @@ app = Flask(__name__)
 RIDES = [
     {
         'id': 1,
-        'name': 'Mike Ross',
+        'name': 'Caleb',
         'location': '4512, Example St.',
         'ETA': '12 minutes'
     },
     {
         'id': 2,
-        'name': 'Harvey Spector',
+        'name': 'Minh',
         'location': '3989, Example St.',
         'ETA': '14 minutes'
     },
     {
         'id': 3,
-        'name': 'Rachel Zane',
+        'name': 'Matthew',
         'location': '4543, Example St.',
         'ETA': '13 minutes'
     },
     {
         'id': 4,
-        'name': 'Louis Litt',
+        'name': 'Fuller',
         'location': '4259, Example St.'
     }
 ]

@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>High School Ride-Sharing</title>
+    <title>Hidden Valley Ride-Sharing</title>
     <style>
 
       #banner {
         width: 100%;
         height: 360px;
         object-fit: cover;
+        margin-bottom: 16px;
       }
 
       h2 {
@@ -33,9 +34,11 @@
     </style>
   </head>
   <body>
+    {% include 'nav.html' %}
+    <img id = "banner" src="static/HVHSFRONT.jpg" height = "320" width = "480" >
     <div id = "container">
-      <h1 class = "text-center mt-2 mb-4"">High School Ride-Sharing</h1>
-      <img id = "banner" src="https://58944a34-76e7-4ad6-8863-6167b7d1f8ba-00-2lzpcqpk676un.spock.replit.dev/static/school_parkinglot.jpg" height = "320" width = "480" >
+      <h1 class = "text-center mt-2 mb-4"">Hidden Valley Ride-Sharing</h1>
+      
       <h2 class = "text-center mt-2 mb-1">About High School Ride-Sharing</h2>
       <p class = "bodytext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada fames ac turpis. Pharetra pharetra massa massa ultricies. Augue mauris augue neque gravida in fermentum et sollicitudin. Purus faucibus ornare suspendisse sed nisi lacus sed viverra. Velit dignissim sodales ut eu sem integer vitae justo eget. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. Volutpat lacus laoreet non curabitur gravida arcu ac. Integer enim neque volutpat ac tincidunt. Ut aliquam purus sit amet.</p>
 
@@ -46,9 +49,9 @@
       </p>
       
       <div style = "text-align: center;">
-          <button type="button" class="btn btn-outline-primary">Contact Us</button>
-        <p class = "mt-4">Copyright 2022, Caleb</p>
+          <a href="mailto:calebtw8@gmail.com?subject=HV%20Ridesharing%20Contact&body=What%20can%20I%20do%20for%20you%3F" type="button" class="btn btn-outline-primary">Contact Us</a>
       </div>
     </div>
+    {% include 'footer.html' %}
   </body>
 </html>
